@@ -4,7 +4,7 @@ const path = require('path');
 const cors = require('cors');
 const app = express();
 
-app.use(cors());
+app.use(cors({ origin: 'https://winxpdevblog.neocities.org' }));
 app.use(express.json());
 
 const postsFile = path.join(__dirname, 'posts.json');
